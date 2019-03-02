@@ -6,7 +6,7 @@ weight: 160
 
 # Request Handlers
 
-A request handler can be any object that implements
+A request handler can be any object that implements the
 [*Handler*](../../actix-web/actix_web/dev/trait.Handler.html) trait.
 
 Request handling happens in two stages. First the handler object is called,
@@ -138,8 +138,8 @@ To return a custom type directly from a handler function, the type needs to impl
 Let's create a response for a custom type that serializes to an `application/json` response:
 
 ```rust
-# extern crate actix;
-# extern crate actix_web;
+extern crate actix;
+extern crate actix_web;
 extern crate serde;
 extern crate serde_json;
 #[macro_use] extern crate serde_derive;
