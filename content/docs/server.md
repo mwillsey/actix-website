@@ -11,7 +11,7 @@ serving http requests.
 
 `HttpServer` accepts an application factory as a parameter, and the
 application factory must have `Send` + `Sync` boundaries. More about that in the
-*multi-threading* section.
+[multithreading](#multithreading) section.
 
 To bind to a specific socket address,
 [`bind()`](../../actix-web/actix_web/server/struct.HttpServer.html#method.bind)
@@ -42,7 +42,7 @@ address of the started http server. It accepts several messages:
 
 {{< include-example example="server" file="signals.rs" section="signals" >}}
 
-## Multi-threading
+## Multithreading
 
 `HttpServer` automatically starts a number of http workers, by default
 this number is equal to number of logical CPUs in the system. This number
