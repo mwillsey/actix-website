@@ -34,9 +34,9 @@ Filename: `src/main.rs`
 
 {{< include-example example="getting-started" section="setup" >}}
 
-Next, create an `Application` instance and register the request handler with
-the application's `resource` on a particular *HTTP method* and *path* and
-after that, the application instance can be used with `HttpServer` to listen
+Next, create an `App` instance and register the request handler with
+the application's `resource` on a particular *HTTP method* and *path*.
+After that, the application instance can be used with `HttpServer` to listen
 for incoming connections. The server accepts a function that should return an
 `HttpHandler` instance.  For simplicity `server::new` could be used, this
 function is shortcut for `HttpServer::new`:
